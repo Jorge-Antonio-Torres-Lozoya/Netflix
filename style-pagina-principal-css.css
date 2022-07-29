@@ -41,9 +41,7 @@ header{
 #search,#btnSearch,#btnClose{
     height: 40%;
 }
-#btnClose{
-    
-}
+
 nav {
 
     position: fixed;
