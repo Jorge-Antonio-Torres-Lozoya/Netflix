@@ -13,8 +13,12 @@ body{
     background: #141414;
 
 }
+#search{
+    width: 150px;
+}
 
 #btnSearch,#btnClose{
+    width: 70px;
     background-color: #e50914;
     border-radius: 4px;
     color: white;
@@ -37,8 +41,11 @@ header{
 #search,#btnSearch,#btnClose{
     height: 40%;
 }
-nav {
+#btnClose{
     
+}
+nav {
+
     position: fixed;
     top: 0px;
     width: 100vw;
@@ -47,6 +54,9 @@ nav {
     background-color: black;
     align-items: center;
     z-index: 1;
+    margin-bottom: 10px;
+   
+
 }
 
 .logo {
@@ -57,7 +67,7 @@ nav {
 
 ul {
     display: flex;
-    gap: 10px;
+ padding-left: 0px;
   
 }
 
@@ -74,6 +84,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+margin-top: 25px;
    
 }
 .movie{
