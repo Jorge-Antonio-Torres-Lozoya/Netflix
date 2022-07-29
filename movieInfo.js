@@ -83,8 +83,8 @@ function detailsMovie() {
 detailsMovie()
 
 function getCast(url) {
-    axios
-        .get(url)
+    
+       axios.get(url)
         .then((response) => {
             let actors = response.data.cast
             actors.forEach(e => {
