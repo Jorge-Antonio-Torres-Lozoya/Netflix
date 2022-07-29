@@ -11,8 +11,8 @@ let nameActors = [];
 
 
 function detailsMovie() {
-    axios
-        .get(BASE_URL + "/movie/" + obtenerId + "?" + API_KEY)
+   
+        axios.get(BASE_URL + "/movie/" + obtenerId + "?" + API_KEY)
         .then((response) => {
             let details = response.data;
             let arrayData = [details];
