@@ -1,3 +1,5 @@
+
+
 html {
     background-color: #141414;
 }
@@ -8,6 +10,7 @@ header {
 }
 
 h1 {
+    
     margin-top: 100px;
     text-align: center;
     font-weight: unset;
@@ -15,7 +18,7 @@ h1 {
 
 
 #logo {
-    width: 170px;
+    width: 190px;
     height: 50px;
 }
 
@@ -44,7 +47,7 @@ h1 {
 }
 
 span {
-    font-size: 1.3vw;
+    font-size: 18px;
     color: #e5e5e58c;
 }
 
@@ -55,6 +58,10 @@ span {
     justify-content: center;
 }
 
+.contenedor-logo {
+    text-align: center;
+}
+
 .hover:hover {
     color: white;
     font-size: 1.1em;
@@ -62,18 +69,21 @@ span {
 
 a {
     text-decoration: none;
+    display: block;
 }
-.contenedor-imagenes a{
+
+.contenedor-imagenes a {
     width: 125px;
 }
-input:hover {
+
+button:hover {
     color: white;
     cursor: pointer;
 }
 
-input {
+button {
     display: flex;
-    width: 18vw;
+    flex-wrap: wrap;
     height: 37px;
     place-content: center;
     background-color: #141414;
@@ -84,8 +94,29 @@ input {
 
 }
 
-footer {
+.contenedor-boton {
+  margin-top: 60px;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+}
+@media only screen and (max-width: 800px) {
+    .contenedor-imagenes {
+        flex-wrap: wrap;
+
+    }
+}
+
+@media only screen and (max-width: 611px) {
+    .contenedor-boton{
+        margin-top: 220px;
+
+    }
+    span{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 550px) {
+   header{
+    justify-content: center;
+   }
 }

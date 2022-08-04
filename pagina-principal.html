@@ -13,23 +13,30 @@
 <body>
     <header>
         <nav>
-            <a href="./pagina-principal.html"><img class="logo"
-                    src="./img/netflix_PNG12.png" alt=""></a>
-            <ul>
-                <div id="tags">
-                    <div class="tag">Action</div>
-                    <div class="tag">Adventure</div>
-                    <div class="tag">Drama</div>
-                    <div class="tag">Comedy</div>
-                </div>
+            <a href="./pagina-principal.html"><img class="logo" src="./img/netflix_PNG12.png" alt=""></a>
 
-            </ul>
+            <input type="checkbox" id="btn-lupa">
+            <label class="lupa" for="btn-lupa"><img id="img-lupa" src="./img/lupa.png" alt=""></label>
+
+            <input type="checkbox" id="btn-menu">
+            <label class="menu" for="btn-menu"><img id="img-menu" src="./img/menu.png" alt=""></label>
+
+
+
+            <div id="tags">
+                <div class="tag">Action</div>
+                <div class="tag">Adventure</div>
+                <div class="tag">Drama</div>
+                <div class="tag">Comedy</div>
+            </div>
+
             <div id="menu-derecha">
                 <input id="search" type="text">
                 <button id="btnSearch">Search</button>
-                <button id="btnClose" onclick="closeSession()" >Close</button>
+                <button id="btnClose" onclick="closeSession()">Close</button>
 
             </div>
+
         </nav>
 
     </header>

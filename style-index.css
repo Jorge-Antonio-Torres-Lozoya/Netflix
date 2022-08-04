@@ -1,12 +1,15 @@
-html {
-    background-image: url(./img/fondo.jpg);
-    z-index: 0;
 
+html{
+    background-image: url(./img/fondo.jpg);
 }
 
 h1 {
     color: white;
     font-size: 32px;
+}
+header{
+    display: flex;
+    margin: 0;
 }
 
 body {
@@ -14,6 +17,10 @@ body {
     margin: 0;
     background-color: rgba(22, 21, 21, 0.596);
     z-index: 1;
+
+}
+p{
+    margin: 20px 20px;
 }
 
 main {
@@ -35,9 +42,9 @@ main {
     gap: 18px;
     background-color: rgba(0, 0, 0, 0.733);
     width: 314px;
-    height: 540px;
+    height: 440px;
     padding: 60px 68px 40px 68px;
-    margin-bottom: 80px;
+
 }
 
 .input {
@@ -61,10 +68,10 @@ main {
     font-size: 16px;
 }
 
-.contendor-chico {
+.contenedor-chico {
     display: flex;
-
-    gap: 50px;
+    gap: 90px;
+    align-items: center;
 
 }
 
@@ -73,11 +80,14 @@ a {
     text-decoration: none;
     color: #b3b3b3;
     font-size: 16px;
+    width: min-content;
 
 }
-
-.recuerdame {
-    margin-right: 95px;
+#checkbox{
+    margin-right: 8px;
+}
+.recuerdame{
+    display: flex;
 }
 
 a:hover {
@@ -86,39 +96,54 @@ a:hover {
 }
 
 footer {
-    width: 100%;
+    margin-top: 22px;
+    display:flex;
+    flex-direction: column;
     height: 240px;
     background: rgba(0, 0, 0, .75);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
 
 }
 
-p {
-    padding-top: 20px;
-    margin-left: 200px;
+.parrafo{
+    height: fit-content;
+    margin: 5px;
     color: #757575;
-    font-size: 18px;
+    font-size: 20px;
+}
+.preguntas{
+    display:flex;
+    gap:25px;
 }
 
-.privacidad {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-
-    margin-left: 164px;
-}
 
 .foot {
     color: #757575;
-    font-size: 16px;
+    font-size: 19px;
 
 }
 
 .cookies {
-    margin-top: 20px;
-    margin-left: 164px;
+    margin-top: 18px;
     display: flex;
-    flex-direction: row;
-    gap: 60px;
+    gap:25px;
+  
 
 }
+@media only screen and (max-width: 600px) {
+    .foot,.parrafo {
+        font-size: 16px;
+    }
+    header{
+        justify-content: center;
+    }
+ }
+
+ @media only screen and (max-width: 500px) {
+    .contenedor{
+        padding: 50px 20px 30px 20px;
+    }
+
+ }

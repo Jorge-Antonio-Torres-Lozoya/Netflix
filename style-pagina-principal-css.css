@@ -1,10 +1,9 @@
-
-*{
+* {
     box-sizing: border-box;
 
 }
 
-body{
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -13,11 +12,13 @@ body{
     background: #141414;
 
 }
-#search{
+
+#search {
     width: 150px;
 }
 
-#btnSearch,#btnClose{
+#btnSearch,
+#btnClose {
     width: 70px;
     background-color: #e50914;
     border-radius: 4px;
@@ -25,26 +26,33 @@ body{
     font-size: 16px;
 }
 
-header{
+header {
     margin-bottom: 5%;
 
 }
+
 #menu-derecha {
+    order: 3;
     display: flex;
     gap: 10px;
     width: 50vw;
     height: 80%;
     align-items: center;
-    justify-content: center;
-  
+    justify-content: flex-end;
+    margin-right: 35px;
+
 }
-#search,#btnSearch,#btnClose{
+
+#search,
+#btnSearch,
+#btnClose {
     height: 40%;
 }
 
 nav {
 
     position: fixed;
+    flex-grow: 1;
     top: 0px;
     width: 100vw;
     height: 13vh;
@@ -53,11 +61,13 @@ nav {
     align-items: center;
     z-index: 1;
     margin-bottom: 10px;
-   
+
 
 }
 
 .logo {
+    display: flex;
+    order: 1;
     margin-left: 15px;
     width: 190px;
     height: 40px;
@@ -65,8 +75,8 @@ nav {
 
 ul {
     display: flex;
- padding-left: 0px;
-  
+    padding-left: 0px;
+
 }
 
 a {
@@ -78,14 +88,16 @@ a:hover {
     color: #fff;
 
 }
-main{
+
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-margin-top: 25px;
-   
+    margin-top: 40px;
+
 }
-.movie{
+
+.movie {
     width: 300px;
     margin: 1rem;
     border-radius: 3px;
@@ -93,26 +105,29 @@ margin-top: 25px;
     position: relative;
     overflow: hidden;
 }
-.movie img{
+
+.movie img {
     width: 100%;
 
 }
-.movie-info{
+
+.movie-info {
     text-align: center;
     color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:  0.5rem 1rem 1rem;
+    padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
-    
+
 
 }
-.movie-info h1{
-margin-top: 5px;
+
+.movie-info h1 {
+    margin-top: 5px;
 }
 
-.movie-info span{
+.movie-info span {
     margin-left: 15px;
     padding: .25rem 0.5rem;
     border-radius: 3px;
@@ -120,16 +135,20 @@ margin-top: 5px;
     font-weight: bold;
     font-size: 18px;
 }
-.movie-info span.green{
+
+.movie-info span.green {
     color: green;
 }
+
 .movie-info span.red {
     color: red;
 }
-.movie-info span.yellow{
+
+.movie-info span.yellow {
     color: yellow;
 }
-.overview{
+
+.overview {
     color: aliceblue;
     font-size: 18px;
     padding: 10px 10px;
@@ -142,15 +161,19 @@ margin-top: 5px;
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 0.4s ease-in;
-    
+
 }
-.movie:hover .overview{
+
+.movie:hover .overview {
     transform: translateY(0);
 }
-.highlight{
-   background: #272727;
+
+.highlight {
+    background: #272727;
 }
+
 #tags {
+    order: 2;
     width: 100%;
     height: 100%;
     display: flex;
@@ -167,7 +190,223 @@ margin-top: 5px;
     padding: 4px 7px;
     border-radius: 50px;
     margin: 5px;
-    display: inline-block;
     cursor: pointer;
 
+}
+
+#btn-menu,
+label {
+    order: 4;
+    display: none;
+}
+
+#img-menu {
+    width: 30px;
+    height: 30px;
+
+}
+
+#img-lupa {
+    width: 30px;
+    height: 30px;
+}
+
+#btn-lupa,
+label {
+    order: 4;
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 1860px) {
+    #main {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 1387px) {
+    .menu {
+
+        display: flex;
+        margin-right: 35px;
+        justify-content: flex-end
+    }
+
+    #tags {
+        display: none;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+
+    }
+
+    .tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 50px;
+        border-radius: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    #btn-menu:checked~#tags {
+        width: fit-content;
+        margin-right: 35px;
+        display: flex;
+        order: 4;
+        margin-top: 40%;
+      
+
+    }
+
+    #menu-derecha {
+        justify-content: flex-end;
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #main {
+        margin-top: 120px;
+    }
+
+    #btn-menu:checked~#tags {
+        margin-top: 60%;
+    }
+}
+
+@media only screen and (max-width: 941px) {
+    #btn-menu:checked~#tags {
+        margin-top: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width: 723px) {
+
+    .lupa {
+        display: flex;
+        margin-right: 15px;
+        flex-grow: 2;
+        justify-content: flex-end;
+    }
+
+    .menu {
+        margin-right: 40px;
+        
+    }
+
+    #btn-lupa:checked~#menu-derecha {
+        display: flex;
+    }
+
+    #btn-lupa:checked~#tags {
+        display: none;
+    }
+
+    #btn-menu:checked~#tags {
+        display: flex
+    }
+
+    #btn-menu:checked~#menu-derecha {
+        display: none;
+    }
+
+
+
+    #menu-derecha {
+        display: none;
+    }
+
+    #btn-menu:checked~#tags {
+        margin-top: 90%;
+    }
+
+  
+
+}
+
+@media only screen and (max-width: 678px) {
+    
+    
+
+    #btn-menu:checked~#tags {
+        margin-top: 100%;
+    }
+    .logo{
+        width: 200px;
+        height: 40px;
+    }
+    #btn-lupa:checked~#menu-derecha {
+        display: flex;
+        position: absolute;
+        top: 85px;
+        justify-content: center;
+        margin-right: 0;
+        width: 100vw;
+       
+    }
+
+
+}
+@media only screen and (max-width: 560px) {
+    #btn-lupa:checked~#menu-derecha {
+        display: flex;
+    }
+
+    #btn-lupa:checked~#tags {
+        display: none;
+    }
+
+    #btn-menu:checked~#tags {
+        margin-top: 125%;
+    }
+    
+}
+
+@media only screen and (max-width: 440px) {
+    #btn-menu:checked~#tags {
+        position:relative;
+        left:-100px ;
+        margin-top: 160%;
+    
+    }
+
+    #btnSearch,
+    #btnClose {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        height: 20px;
+    }
+
+    #search {
+        width: 110px;
+        height: 18px;
+
+    }
+}
+@media only screen and (max-width: 405px) {
+    #btn-menu:checked~#tags {
+        margin-top: 185%;
+    
+    }
+    
+}
+@media only screen and (max-width: 350px) {
+    #btn-menu:checked~#tags {
+        margin-top: 205%;
+        left:-120px ;
+    }
+    
+    
 }
