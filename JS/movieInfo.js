@@ -27,22 +27,7 @@ function detailsMovie() {
                 let imagenPeli = IMG_URL + imagen
                 const movieEl = document.createElement('div');
                 movieEl.innerHTML = `
-                <nav>
-                <div class="header">
-                    <img id="imgLogo" onclick="volver()" src="./img/netflix_PNG12.png" alt="" srcset="">
-                </div>
-                <ul>
-                    <a href="./pagina-principal.html"> Inicio</a>
-                    <a href="./pagina-principal.html">Series</a>
-                    <a href="./pagina-principal.html">Películas</a>
-                    <a href="./pagina-principal.html">Novedades populares</a>
-                    <a href="./pagina-principal.html">Mi lista</a>
-                </ul>
-                <div id="menu-derecha">
-                <button id="btnSearch" onclick="closeSession()" >Close Session</button>
-
-            </div>
-            </nav> 
+               
             
     <div class="contenedor">
     

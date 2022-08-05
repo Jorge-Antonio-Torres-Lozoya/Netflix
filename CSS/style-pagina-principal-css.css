@@ -223,11 +223,14 @@ label {
 
 @media only screen and (max-width: 1860px) {
     #main {
-        margin-top: 80px;
+        margin-top: 35px;
     }
 }
 
 @media only screen and (max-width: 1387px) {
+    #main {
+        margin-top: 40px;
+    }
     .menu {
 
         display: flex;
