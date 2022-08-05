@@ -361,6 +361,9 @@ label {
 
 }
 @media only screen and (max-width: 560px) {
+    .tag{
+        font-size: 14px;
+    }
     #btn-lupa:checked~#menu-derecha {
         display: flex;
     }
