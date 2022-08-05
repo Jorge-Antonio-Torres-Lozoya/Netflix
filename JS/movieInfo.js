@@ -87,11 +87,11 @@ function getCast(url) {
 getCast(BASE_URL + "/movie/" + obtenerId + "/" + "credits" + "?" + API_KEY)
 
 function volver() {
-    window.location.href = '../html/pagina-principal.html'
+    window.location.href = 'pagina-principal.html'
 }
 
 
 function closeSession() {
-    window.location.href="../html/index.html"
+    window.location.href="index.html"
     
   }
