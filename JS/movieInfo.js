@@ -92,6 +92,6 @@ function volver() {
 
 
 function closeSession() {
-    window.location.href="index.html"
+    window.location.href="../index.html"
     
   }
