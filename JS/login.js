@@ -10,7 +10,7 @@ function validateLogin() {
     let inptEmail = document.getElementById("inputEmail").value;
     let inptPassword = document.getElementById("inputPassword").value;
     if(inptEmail==USER.email&&inptPassword==USER.password){
-        window.location.href="users.html"
+        window.location.href="../html/users.html"
     }
     else{
         alert("Los datos que ingresaste son incorrectos, favor de ingresar su email y contraseña correctamente"+"\n"

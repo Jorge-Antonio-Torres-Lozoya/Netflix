@@ -110,6 +110,6 @@ form.addEventListener('click', (e) => {
 
 
 function closeSession() {
-    window.location.href="index.html"
+    window.location.href="../html/index.html"
     
   }
